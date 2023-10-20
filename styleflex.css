@@ -2,6 +2,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    border: 1px solid red
  }
  :root{
     background-color: #CFE1B9;
@@ -11,16 +12,19 @@
     background-color: #718355;
     display:flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap:35rem;
     align-items: center;
     border:white 1px solid;
+    height: 10vh;
  }
 
  .box-1{
     display: flex;
     flex-direction: row;
-    gap:5rem; 
-    margin: 1rem;
+    gap:2rem; 
+    width: auto;
+    
  }
 
  .box-1 a:hover{
@@ -32,35 +36,39 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: none;
     color: white;
+      padding:.5rem;
  }
 
  .box-2{
     display: flex;
-    width: 5rem;
+    width: 3rem;
  }
 
  .main{
     background-color: #CFE1B9;
     display: flex;
     flex-direction: column;
-    border:white 1px solid;
     align-items: center;
+    min-height: 80vh;
   
 }
 
 .div-box-3{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
     background-color: #B5C99A;
-    border:white 1px solid;
     width: 100%;
+    margin: .5rem;
+    padding:.5rem;
 }
 
  .box-3{
     display: flex;
     width:20rem;
-    margin: auto;
     justify-content: center;
-   padding:1rem;
    font-size: 2rem;
+   font-family: Georgia, 'Times New Roman', Times, serif;
  }
 
  .subbox-3{
@@ -69,27 +77,29 @@
     margin: auto;
     justify-content: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding:1rem;
     font-size: 1rem;
+    text-align: center;
  }
 
  #banner{
     background-image: url(images/imagebanner.jpg);
-    height: 70vh;
+    height: 50vh;
     width: 100%;
-    border:white 1px solid;
+
  }
 
  .main-container{
     display: flex;
     flex-direction: row;
+    width: 100%;
     justify-content: center;
+    gap: 3rem;
+    padding: 2rem;
  }
 
  .text-container{
     display: flex;
-    width:30rem;
-    margin: auto;
+    width:25rem;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding:1rem;
@@ -98,6 +108,7 @@
     background: white;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     border-radius: 15px;
+    padding-top: 50px;
 }
 
  .img-container{
@@ -107,21 +118,20 @@
     width: 400px;
     height: 400px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-   margin:4rem;
    border-radius: 15px;
  }
 
  .foot-container{
-    background-color: #718355;
-    justify-content: center;
-    width: 100%;
-    display:flex;
-    border:white 1px solid;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   background-color: #718355;
+    height: 10vh;
  }
 
  .foot-text-container{
     display: flex;
-    margin: 2rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color:white;
     font-size: 1.5rem;  
@@ -167,6 +177,7 @@
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+    margin: 2rem;
  }
  .img-contact{
     display:flex;
@@ -177,7 +188,6 @@
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     border-radius: 5px;
     justify-self: center;
-    margin: 1rem;
     
  }
 
@@ -195,29 +205,16 @@
     padding: 2rem;
 }
 
-.text-contact-2{
-    display:flex;
-    flex-direction: row;
-    width: 24rem;
-    font-size: 2rem;
-    text-align:center;
-    Font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    border-radius: 5px;
-    padding: 2rem;
-    margin: 2rem;
-}
+
 
 .links-contact{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     width:100%;
-    background-color: white;
-    padding: 2rem;
+    padding: 1rem;
     background-color: #B5C99A;
-    border:white 1px solid;
-    margin-top: 2rem;
+    
 }
 
 .links-1{
@@ -243,21 +240,17 @@
 
 .box-services{
    display: flex;
-  padding:1rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
  align-self: center;
- margin: auto;
  justify-content: center;
 }
 
 .subbox-services{
    display: flex;
-   width:14rem;
-   margin: auto;
+   width:20rem;
    justify-content: center;
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   padding:1rem;
-   font-size: 1.2rem;
+   font-size: 1rem;
    text-align: center;
 }
 
@@ -289,44 +282,211 @@ table{
    flex-direction: column;
    width:80%;
    align-items: center;
-   margin: 2rem;
+   margin: 1rem;
 }
 .div-ratings{
    display: flex;
-   flex-wrap: wrap;
-   width: 80%;
-   margin: 1rem;
+   flex-direction: row;
+   justify-content: space-around;
+   width: 70%;
+  
 }
 
 .img-1-ratings{
-   width:18rem;
+   width:21rem;
    object-fit: cover;
-   margin: 1rem;
 }
 
 .list-img-2{
    display: flex;
    flex-direction: column;
-}
-.list-ratings{
-   font-size: 30px;
-   width:24rem;
-   height: 12rem;
-   margin: 1rem;
-   padding: 1.2rem;
+   align-items: center;
+   justify-content: flex-end;
+   gap:1rem;
+  
 }
 
-.list-ratings ol{
+.list-ratings{
    font-size: 25px;
-   margin: 0.8rem;
-  align-content: center;
+  
 }
+
 .img-2-ratings{
    width:16rem;
-   margin: 1rem;
-   display: flex;
-   flex-direction: row;
-   justify-content: end;
-   align-self: flex-start;
+   object-fit: cover;
+  
+  
+}
 
+/*forms start here*/
+
+#form{
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   border: 1px solid black;
+   width: 25rem;
+   margin: 2rem;
+   padding: 2rem;
+   background-color: black;
+   color: white;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#map{
+   display: flex;
+   flex-direction: column;
+   border: 2px solid black;
+   margin: 1rem;
+   padding: 1rem;
+   align-items: center;
+   gap: 1rem;
+   
+}
+
+#map h2{
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   border:2px solid black;
+   font-size: 30px;
+   margin-top: 7rem;
+   padding: 1rem;
+   color:white;
+}
+
+#hire-box{
+   display: flex;
+   background-color: black;
+   border-radius: 5px;
+   margin: 2rem;
+}
+
+.send{
+   width: 3rem;
+   margin-left: 3rem;
+}
+
+.pay{
+   display: flex;
+   flex-direction: column;
+   border: 2px solid black;
+}
+
+.submit{
+   border: 1px solid black;
+}
+
+@media only screen and (min-width:320px) and (max-width:767px){
+   .head-container{
+   flex-direction: column-reverse;
+    border:white 1px solid;
+    gap:0rem;
+    width: 100%;
+    min-height: 10vh;
+ }
+ .head-container:hover{
+      transform: scale(1.0);
+      padding:0;
+ }
+ .box-1{
+   flex-direction: column;
+   gap:0;
+   padding:0;
+   max-height: 10vh;
+   gap:1px;
+ }
+
+ .box-1 a{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   text-decoration: none;
+   color: white;
+   font-size: 6px;
+   text-align: center;
+   padding:0;
+ }
+
+ .box-2{
+    display: flex;
+    flex-direction: column;
+    width: 1rem;
+ }
+ #banner{
+   background-image: url(images/imagebanner.jpg);
+   background-position: center;
+   height: 29vh;
+   width: 100%;
+}
+.div-box-3{
+   margin:0;
+}
+.box-3{
+   width:10rem;
+   font-size: 15px;
+}
+.main-container{
+   flex-direction: column-reverse;
+   align-items: center;
+}
+.img-container{
+   width: 200px;
+   height: 200px;
+}
+.text-container{
+   font-size: 20px;
+   width:auto;
+   padding-top:1rem;
+}
+.foot-text-container{
+   font-size: 15px;
+}
+/*about us*/
+ .divs{
+   flex-direction: column;
+   padding:.5rem;
+ }
+
+ .au-1{
+   width: 18rem;
+   height: 27rem;
+   object-fit: contain;
+ }
+
+ .au-text{
+font-size: 20px;
+width:18rem;
+padding:10px;
+ }
+/*contact*/
+.subbox-3{
+   width:auto;
+   font-size: 10px;
+}
+.div-contact{
+   margin:.5rem;
+   gap:.5rem;
+}
+.img-contact{
+   width: 18rem;
+   height: 12rem;
+   object-fit: contain;
+}
+.text-contact{
+   width:auto;
+   font-size: 20px;
+   padding: .5rem;
+}
+.div-contact>h3{
+   width:auto;
+   font-size: 15px;
+   padding: .5rem;
+}
+.links-contact{
+   flex-direction: column;
+   align-items: center;
+   gap:.5rem;
+   font-size: small;
+   margin-top: 2rem;
+}
+.links-1{
+   margin-right: 0rem;
+}
 }

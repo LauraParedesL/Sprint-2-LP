@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindy Photo</title>
+    <link rel="stylesheet" href="../styleflex.css">
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-ico">
+</head>
+<body>
+    <header class="head-container">
+        <nav class="box-1">
+               <a href="../index.html">HOME</a>
+               <a href="./aboutus.html">ABOUT US</a>
+               <a href="./contact.html">CONTACT</a>
+               <a href="./services.html">SERVICES</a> 
+               <a href="./rating.html">RATING</a> 
+               <a href="#">HIRE</a>   
+        </nav>
+                <img class="box-2" src="../images/logo.png" alt="logo">
+   </header>
+   <main class="main">
+    <div class="div-box-3">
+       <h1 class="box-services" >HIRE</h1>
+        <p class="subbox-services">Fill out the form so we can attend your event</p>
+   </div> 
+   <div id="hire-box">
+        <article id="map">
+            <h2>Our Location</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423284.04422834393!2d-118.74140053903372!3d34.020608443453504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20%C3%81ngeles%2C%20California%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sco!4v1697742750209!5m2!1ses-419!2sco" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </article>
+   <form id="form" action="../show_data.html">
+        <label for="name">First Name and Last Name:</label>
+        <input type="text" id="name" name="fullname">
+
+        <label for="phone">Phone Number:</label>
+        <input type="number"  id="phone" name="phone">
+
+        <label for="service">Choose Service:</label>
+        <select name="service" id="service">
+            <option value="">--Choose an option--</option>
+            <option value="choose wedding">Wedding</option>
+            <option value="Choose Birthday">Birthday</option>
+            <option value="Choose Kids Birthday">Kids Birthday</option>
+            <option value="Choose outside photo studio">Photostudio/Outside</option>
+        </select>
+
+        <label for="date">Choose date:</label>
+        <input type="date" id="date" name="date">
+<br>
+        <fieldset class="pay">
+        <legend>Payment options:</legend>
+        <br>
+        <label for="cash">
+            <input type="radio" id="cash" name="payment" value="payment">
+            Cash
+        </label>
+        <label  for="creditcard">
+            <input type="radio" id="creditcard" name="payment" value="payment">
+            Credit card
+        </label>
+        <label for="debitcard">
+            <input type="radio" id="debitcard" name="payment" value="payment">
+            Debit card
+        </label>
+        </fieldset>
+        <br>
+        <label for="message">Message (Location and Time)</label>
+        <textarea name="text" id="message" cols="30" rows="10"></textarea>
+        <br>
+        <!--dos input en un mismo label me arroja error en el validator-->
+        <fieldset class="submit">
+        <label for="text">
+            <input type="checkbox" id="text" name="termsandconditions">
+            I accept terms and conditions...
+        </label>
+            <input class="send" type="submit" value="send">
+        </fieldset>
+   </form> 
+</div>
+</main>
+<footer class="foot-container" >
+    <div >
+        <h3 class="foot-text-container">Created by: Laura Paredes</h3>
+    </div>
+</footer> 
+</body>
+</html>
