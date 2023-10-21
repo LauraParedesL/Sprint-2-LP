@@ -2,29 +2,72 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    border: 1px solid red
+    outline: 1px solid red;
  }
+
  :root{
     background-color: #CFE1B9;
  }
-
- .head-container{
+ 
+ header{
     background-color: #718355;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-    gap:35rem;
-    align-items: center;
-    border:white 1px solid;
-    height: 10vh;
+    display: flex;
+      flex-direction: row-reverse ;
+      justify-content: space-between;
+      min-height: 5rem;
+      align-items: center;
+ }
+nav{
+   
+   width: auto;
+   height: 120%;
+   padding:10px;
+   text-align: left;
+   padding-top: 10px;
+   display: flex;
+   justify-content: center;
+   justify-content: space-between;
+   
+}
+
+a{
+   color: white;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   text-decoration: none;
+   margin-right:20px;
+   font-size: 20px;
+}
+.header-img { 
+   width: 3rem;
+   height: 3rem;
+}
+
+ .div-box-3{
+   text-align:center;
+   margin:30px;
+   margin-top:30px;
  }
 
- .box-1{
-    display: flex;
-    flex-direction: row;
-    gap:2rem; 
-    width: auto;
-    
+ .div-box-3 h1{
+   font-size:30px;
+   margin-bottom:10px;
+   text-transform:uppercase;
+ }
+
+ .subbox-3{
+   font-size: 20px;
+   display: inline;
+   color:red;
+ }
+ #banner{
+   width: 100%;
+  padding: 90px 50px;
+  background-image: url(./images/imagebanner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 30px;
+  box-shadow: 15px 15px 20px 10px rgba(0, 0, 0, 0.5);
  }
 
  .box-1 a:hover{
@@ -44,7 +87,7 @@
     width: 3rem;
  }
 
- .main{
+ main{
     background-color: #CFE1B9;
     display: flex;
     flex-direction: column;
@@ -121,7 +164,7 @@
    border-radius: 15px;
  }
 
- .foot-container{
+ footer{
    display: flex;
    flex-direction: row;
    justify-content: center;
@@ -130,7 +173,7 @@
     height: 10vh;
  }
 
- .foot-text-container{
+ .footer-text{
     display: flex;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color:white;
@@ -238,6 +281,7 @@
 
 /*services titulo*/
 
+
 .box-services{
    display: flex;
   font-size: 2rem;
@@ -320,6 +364,7 @@ table{
 
 /*forms start here*/
 
+
 #form{
    display: flex;
    flex-direction: column;
@@ -375,118 +420,122 @@ table{
    border: 1px solid black;
 }
 
-@media only screen and (min-width:320px) and (max-width:767px){
-   .head-container{
-   flex-direction: column-reverse;
-    border:white 1px solid;
-    gap:0rem;
-    width: 100%;
-    min-height: 10vh;
- }
- .head-container:hover{
-      transform: scale(1.0);
+@media only screen and (min-width:320px) and (max-width:1023px) {
+   header{
+      flex-direction: column-reverse;
+      min-height: 10vh;
+   }
+   header:hover{
+         transform: scale(1.0);
+         padding:0;
+   }
+   nav{
+      flex-direction: column;
+      gap:0;
       padding:0;
- }
- .box-1{
-   flex-direction: column;
-   gap:0;
-   padding:0;
-   max-height: 10vh;
-   gap:1px;
- }
+      gap:1px;
+   }
 
- .box-1 a{
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   text-decoration: none;
-   color: white;
-   font-size: 6px;
-   text-align: center;
-   padding:0;
- }
+   a{
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      text-decoration: none;
+      color: white;
+      font-size: 3vw;
+      text-align: center;
+      padding:0;
+      margin: 0px;
+   }
 
- .box-2{
-    display: flex;
-    flex-direction: column;
-    width: 1rem;
- }
- #banner{
-   background-image: url(images/imagebanner.jpg);
-   background-position: center;
-   height: 29vh;
-   width: 100%;
-}
-.div-box-3{
-   margin:0;
-}
-.box-3{
-   width:10rem;
-   font-size: 15px;
-}
-.main-container{
-   flex-direction: column-reverse;
-   align-items: center;
-}
-.img-container{
-   width: 200px;
-   height: 200px;
-}
-.text-container{
+   .header-img{
+      flex-direction: column-reverse;
+      margin-right:0px;
+      max-width:30px;
+      max-height: 30px;
+   }
+   #banner{
+      background-image: url(images/imagebanner.jpg);
+      background-position: center;
+      height: 29vh;
+      width: 100%;
+   }
+   .div-box-3{
+      margin:0;
+   }
+   .box-3{
+      font-size: 15px;
+   }
+   .main-container{
+      flex-direction: column;
+      align-items: center;
+   }
+   .main-header {
+      flex-direction: column;
+      align-items: center;      
+   }
+   .img-container{
+      width: 200px;
+      height: 200px;
+   }
+   .text-container{
+      font-size: 20px;
+      width:auto;
+      padding-top:1rem;
+   }
+   .foot-text-container{
+      font-size: 15px;
+   }
+   /*about us*/
+
+   .divs{
+      flex-direction: column;
+      padding:.5rem;
+   }
+
+   .au-1{
+      width: 18rem;
+      height: 27rem;
+      object-fit: contain;
+   }
+
+   .au-text{
    font-size: 20px;
-   width:auto;
-   padding-top:1rem;
-}
-.foot-text-container{
-   font-size: 15px;
-}
-/*about us*/
- .divs{
-   flex-direction: column;
-   padding:.5rem;
- }
+   width:18rem;
+   padding:10px;
+   }
+   /*contact*/ 
 
- .au-1{
-   width: 18rem;
-   height: 27rem;
-   object-fit: contain;
- }
+   .subbox-3{
+      width:auto;
+      font-size: 10px;
+   }
+   .div-contact{
+      margin:.5rem;
+      gap:.5rem;
+   }
+   .img-contact{
+      width: 18rem;
+      height: 12rem;
+      object-fit: contain;
+   }
+   .text-contact{
+      width:auto;
+      font-size: 20px;
+      padding: .5rem;
+   }
+   .div-contact > h3{
+      width:auto;
+      font-size: 15px;
+      padding: .5rem;
+   }
+   .links-contact{
+      flex-direction: column;
+      align-items: center;
+      gap:.5rem;
+      font-size: small;
+      margin-top: 2rem;
+   }
+   .links-1{
+      margin-right: 0rem;
+   }
+}
 
- .au-text{
-font-size: 20px;
-width:18rem;
-padding:10px;
- }
-/*contact*/
-.subbox-3{
-   width:auto;
-   font-size: 10px;
-}
-.div-contact{
-   margin:.5rem;
-   gap:.5rem;
-}
-.img-contact{
-   width: 18rem;
-   height: 12rem;
-   object-fit: contain;
-}
-.text-contact{
-   width:auto;
-   font-size: 20px;
-   padding: .5rem;
-}
-.div-contact>h3{
-   width:auto;
-   font-size: 15px;
-   padding: .5rem;
-}
-.links-contact{
-   flex-direction: column;
-   align-items: center;
-   gap:.5rem;
-   font-size: small;
-   margin-top: 2rem;
-}
-.links-1{
-   margin-right: 0rem;
-}
-}
